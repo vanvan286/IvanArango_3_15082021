@@ -1,0 +1,23 @@
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin button{
+    opacity: 1;
+    background: $color-gradient;
+    color: white;
+    font-weight: bold;
+    border: 1px transparent;
+    padding: 15px 20px;
+    border-radius: 200px;
+    box-shadow: 0 0 10px 0 #5A5E5A;
+}
+
+@mixin button-hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0 0 10px 0 #4D524E;
+}

@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "shrikhand";
+  src: url(fonts/shrikhand/Shrikhand-Regular.otf);
+}
+@font-face {
+  font-family: "roboto";
+  src: url(fonts/roboto-fontfacekit/roboto_regular_macroman/);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto";
+  src: url(fonts/roboto-fontfacekit/roboto_bold_macroman/);
+  font-weight: bold;
+  font-style: normal;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "roboto", sans-serif;
+  background: white;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "shrikhand";
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E1E1E1;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px inset;
+}
+.localisation__icon {
+  margin: 15px;
+}
+.localisation__ville {
+  font-weight: bold;
+}
+
+.exploration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f7f7f7;
+  padding: 40px 30px 55px 40px;
+}
+.exploration .btn {
+  opacity: 1;
+  background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
+  color: white;
+  font-weight: bold;
+  border: 1px transparent;
+  padding: 15px 20px;
+  border-radius: 200px;
+  box-shadow: 0 0 10px 0 #5A5E5A;
+  margin-top: 30px;
+}
+.exploration .btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 0 10px 0 #4D524E;
+}
+
+/*# sourceMappingURL=style.css.map */

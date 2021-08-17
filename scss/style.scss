@@ -1,0 +1,73 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@font-face {
+    font-family: 'shrikhand';
+    src: url(fonts/shrikhand/Shrikhand-Regular.otf);
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(fonts/roboto-fontfacekit/roboto_regular_macroman/);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(fonts/roboto-fontfacekit/roboto_bold_macroman/);
+    font-weight: bold;
+    font-style: normal;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+    background: white;
+    
+}
+
+.header__logo{
+    @include flexbox-center;
+    font-family: 'shrikhand';
+}
+
+.localisation{
+    @include flexbox-center;
+    background:#E1E1E1;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px inset;
+
+    &__icon{
+        margin: 15px;
+    }
+
+    &__ville{
+        font-weight: bold;
+    }
+}
+
+.exploration{
+    @include flexbox-center;
+    flex-direction: column;
+    background: $color-background-menus;
+    padding: 40px 30px 55px 40px;
+
+    .btn{
+        @include button;
+        margin-top: 30px;
+    }
+    
+    .btn:hover{
+        @include button-hover;
+    }
+
+}
+
