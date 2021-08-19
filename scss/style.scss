@@ -85,7 +85,21 @@ body{
     flex-direction: column;
 }
 
-// Header //
+/* Header */
+
+.header__container{
+    @include flexbox-center;
+    position: relative;
+
+    .header__arrow{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 35px;
+        top: 40%;
+        font-size: 20px;
+    }
+}
 
 .header__logo{
     @include flexbox-center;
@@ -94,7 +108,7 @@ body{
     margin: 20px 0 10px 0;
 }
 
-// Localisation //
+/* Localisation */
 
 .localisation{
     @include flexbox-center;
@@ -110,7 +124,8 @@ body{
     }
 }
 
-// Description Site //
+/* Description Site */
+
 
 .exploration{
     @include flexbox-center;
@@ -140,7 +155,7 @@ body{
 
 }
 
-// Fonctionnement //
+/* Fonctionnement */
 
 .fonctionnement__container{
 
@@ -174,6 +189,12 @@ body{
 
 }
 
+.fonctionnement{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .btn__fonc{
     display: flex;
     flex-wrap: wrap;
@@ -183,12 +204,12 @@ body{
     font-weight: bold;
     border: 1px transparent;
     border-radius: 15px;
-    width: 325px;
+    width: 100%;
     height: 70px;
     box-shadow: 0 0 10px 0 #c7cac7;
 }
 
-// Restaurants //
+/* Restaurants */
 
 .restaurants__container{
     background: $color-background-menus;
@@ -278,8 +299,18 @@ body{
     padding: 30px 30px 20px 0;
 }
 
+.restaurant__banner{
+    width: 100%;
+    
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
 
-// Footer //
+}
+
+
+/* Footer */
 
 .footer__container{
 
@@ -297,6 +328,7 @@ body{
 
     ul{
         margin-left: 20px;
+        padding-bottom: 25px;
     }
 
     li{

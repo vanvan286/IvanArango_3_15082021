@@ -1,19 +1,22 @@
 @font-face {
-  font-family: "shrikhand";
+  font-family: 'shrikhand';
   src: url(fonts/shrikhand/Shrikhand-Regular.otf);
 }
+
 @font-face {
-  font-family: "roboto";
+  font-family: 'roboto';
   src: url(fonts/roboto-fontfacekit/roboto_regular_macroman/);
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: "roboto";
+  font-family: 'roboto';
   src: url(fonts/roboto-fontfacekit/roboto_bold_macroman/);
   font-weight: bold;
   font-style: normal;
 }
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -59,7 +62,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -74,22 +77,34 @@ a {
 }
 
 body {
-  font-family: "roboto", sans-serif;
+  font-family: 'roboto', sans-serif;
   background: white;
 }
 
 .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /* Header */
 .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
+
 .header__container .header__arrow {
   width: 50px;
   height: 50px;
@@ -100,39 +115,64 @@ body {
 }
 
 .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "shrikhand";
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'shrikhand';
   font-size: 30px;
   margin: 20px 0 10px 0;
 }
 
 /* Localisation */
 .localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #E1E1E1;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px inset;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px inset;
 }
+
 .localisation__icon {
   margin: 15px;
 }
+
 .localisation__ville {
   font-weight: 600;
 }
 
 /* Description Site */
 .exploration {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #f7f7f7;
   padding: 40px 30px 55px 40px;
   text-align: center;
 }
+
 .exploration .btn {
   opacity: 1;
   background: linear-gradient(170deg, #ff79da 0%, #9356dc 100%);
@@ -141,20 +181,26 @@ body {
   border: 1px transparent;
   padding: 15px 20px;
   border-radius: 200px;
-  box-shadow: 0 0 10px 0 #5A5E5A;
+  -webkit-box-shadow: 0 0 10px 0 #5A5E5A;
+          box-shadow: 0 0 10px 0 #5A5E5A;
   margin-top: 30px;
 }
+
 .exploration .btn:hover {
   opacity: 0.7;
   cursor: pointer;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
-  box-shadow: 0 0 10px 0 #4D524E;
+  -webkit-box-shadow: 0 0 10px 0 #4D524E;
+          box-shadow: 0 0 10px 0 #4D524E;
 }
+
 .exploration h2 {
   font-weight: 600;
   font-size: 22px;
   margin-bottom: 20px;
 }
+
 .exploration p {
   font-size: 15px;
 }
@@ -165,36 +211,51 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .fonctionnement__container h2 {
   font-weight: bold;
   font-size: 22px;
   margin: 50px 0 30px 0;
 }
+
 .fonctionnement__container .fonc__number {
   background: #9356DC;
   border-radius: 500px;
   color: white;
   padding: 6px 10px 6px 10px;
-  transform: translateX(-70%);
+  -webkit-transform: translateX(-70%);
+          transform: translateX(-70%);
 }
+
 .fonctionnement__container .fonc__icon {
   color: #7E7E7E;
   margin-right: 20px;
 }
+
 .fonctionnement__container .fonc__texte {
   font-size: 14px;
 }
 
 .fonctionnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
 }
 
 .btn__fonc {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #f7f7f7;
   margin-bottom: 20px;
   font-weight: bold;
@@ -202,7 +263,8 @@ body {
   border-radius: 15px;
   width: 100%;
   height: 70px;
-  box-shadow: 0 0 10px 0 #c7cac7;
+  -webkit-box-shadow: 0 0 10px 0 #c7cac7;
+          box-shadow: 0 0 10px 0 #c7cac7;
 }
 
 /* Restaurants */
@@ -213,6 +275,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .restaurants__container h2 {
   font-weight: bold;
   font-size: 22px;
@@ -220,36 +283,52 @@ body {
 }
 
 .restaurants__cards {
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   grid-gap: 20px;
   padding: 20px 0 20px 0;
 }
 
 .restaurants__card {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   border-radius: 20px;
-  box-shadow: 0 0 10px 0 #c7cac7;
+  -webkit-box-shadow: 0 0 10px 0 #c7cac7;
+          box-shadow: 0 0 10px 0 #c7cac7;
 }
+
 .restaurants__card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+
 .restaurants__card .texte__img {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #99e2d0;
   top: 20px;
   right: 20px;
 }
+
 .restaurants__card .texte__img p {
   color: #1b6150;
   padding: 10px 20px;
@@ -266,21 +345,31 @@ body {
 }
 
 .restaurants__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .restaurants__texte h3 {
   font-weight: bold;
   font-size: 16px;
   margin-bottom: 10px;
 }
+
 .restaurants__texte-infos {
   margin: 20px 0 20px 15px;
 }
 
 .far.fa-heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-size: 20px;
   padding: 30px 30px 20px 0;
 }
@@ -288,9 +377,11 @@ body {
 .restaurant__banner {
   width: 100%;
 }
+
 .restaurant__banner img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Footer */
@@ -300,30 +391,35 @@ body {
   color: #f7f7f7;
   padding-top: 25px;
 }
+
 .footer__container h2 {
-  font-family: "shrikhand", sans-serif;
+  font-family: 'shrikhand', sans-serif;
   font-size: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
 }
+
 .footer__container ul {
   margin-left: 20px;
   padding-bottom: 25px;
 }
+
 .footer__container li {
   margin-bottom: 10px;
 }
+
 .footer__container a {
   color: #f7f7f7;
   font-size: 15px;
 }
+
 .footer__container .fa.fa-cutlery {
   font-size: 14px;
   margin-right: 17px;
 }
+
 .footer__container .fas.fa-hands-helping {
   font-size: 14px;
   margin-right: 10px;
 }
-
 /*# sourceMappingURL=style.css.map */
