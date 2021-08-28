@@ -1,6 +1,8 @@
 @font-face {
-  font-family: "shrikhand";
-  src: url(fonts/shrikhand/Shrikhand-Regular.otf);
+  font-family: "shrikhandregular";
+  src: url("Fonts/shrikhand/shrikhand-regular-webfont.woff2") format("woff2"), url("Fonts/shrikhand/shrikhand-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "robotobold";
@@ -157,7 +159,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "shrikhand", sans-serif;
+  font-family: "shrikhandregular", sans-serif;
   font-size: 30px;
   margin: 20px 0 10px 0;
 }
@@ -433,7 +435,7 @@ body {
 }
 .carte__header h1 {
   font-size: 30px;
-  font-family: "shrikhand", sans-serif;
+  font-family: "shrikhandregular", sans-serif;
 }
 
 .restaurant__menus {
@@ -633,7 +635,7 @@ body {
   padding-top: 25px;
 }
 .footer__container h2 {
-  font-family: "shrikhand", sans-serif;
+  font-family: "shrikhandregular", sans-serif;
   font-size: 20px;
   margin-bottom: 20px;
   margin-left: 20px;
