@@ -159,7 +159,7 @@ body{
 
 .header__logo{
     @include flexbox-center;
-    font-family: 'shrikhand';
+    font-family: 'shrikhand', sans-serif ;
     font-size: 30px;
     margin: 20px 0 10px 0;
 }
@@ -363,12 +363,71 @@ body{
     }
 }
 
-.far.fa-heart{
+.restaurants__texte-heart{
     display: flex;
     justify-content: flex-end;
     font-size: 25px;
     padding: 30px 30px 35px 10px;
 }
+
+.icon__heart{
+    fill: transparent;
+    stroke: black;
+    stroke-width: 32;
+    cursor: pointer;
+    position: relative;
+
+    svg{
+        overflow: visible;
+        width: 25px;
+    }
+
+    path{
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1550;
+        transform-origin: center;
+    }
+
+    .heart-background{
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        stroke: none;
+    }
+
+    .heart-main:hover path{
+        animation: stroke-animation 2s ease-in-out forwards;
+    }
+
+}
+
+@keyframes stroke-animation {
+    0% {
+      stroke-dashoffset: 0;
+    }
+    30% {
+      stroke-dashoffset: 1550;
+    }
+    60% {
+      stroke-dashoffset: 3100;
+      fill: transparent;
+      transform: scale(1);
+    }
+    80% {
+      fill: url(#heart-fill);
+      transform: scale(1.1);
+    }
+    90% {
+      transform: scale(1);
+    }
+    100% {
+      stroke-dashoffset: 3100;
+      fill: url(#heart-fill);
+      stroke: url(#heart-fill);
+    }
+  }
+  
 
 /* Carte par restaurant */
 
